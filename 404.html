@@ -4,58 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>404</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <main>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 align-self-center">
-            <div class="notifications-container">
-              <div class="message flex">
-                <div class="flex-shrink-0">
-                  <svg class="message-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path fill-rule="evenodd" d="m12 16l4-4l-4-4l-1.4 1.4l1.6 1.6H8v2h4.2l-1.6 1.6zm0 6q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22" clip-rule="evenodd"></path>
-                  </svg>
-                </div>
-                <div class="message-prompt-wrap">
-                  <p class="message-prompt-heading">
-                    要不看看别的？<br />
-                    Maybe have a look elsewhere?
-                  </p>
-                  <p class="message-prompt-prompt">
-                    我的博客和 GitHub 主页：<br />
-                    My blog and GitHub profile page:
-                  </p>
-                  <div class="message-button-container">
-                    <a href="https://blog.lsy223622.com">
-                      <button type="button" class="message-button-main">Blog</button>
-                    </a>
-                    <a href="https://github.com/lsy223622">
-                      <button type="button" class="message-button-secondary">GitHub</button>
-                    </a>
-                  </div>
-                </div>
+      <div class="flex-container">
+        <div class="hh-container">
+          <h1>404</h1>
+          <h2>
+            页面不见咯~<br />
+            The page is missing~
+          </h2>
+          <div class="content">
+            <p>
+              很奇怪吗？我也觉得。<br />
+              但你是怎么找到这个页面的呢？<br />
+              Feeling strange? Me too. <br />
+              But how do you find this page?
+            </p>
+          </div>
+        </div>
+        <div class="link-container">
+          <div class="msg-container">
+            <svg fill="currentColor" class="msg-svg" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M12 16l4-4-4-4-1 1 1 2H8v2h4l-1 2zm0 6l-4-1-3-2-2-3-1-4 1-4 2-3 3-2 4-1 4 1 3 2 2 3 1 4-1 4-2 3-3 2-4 1" clip-rule="evenodd" />
+            </svg>
+            <div class="msg-prompt-wrap">
+              <p class="msg-prompt-heading">
+                要不看看别的？<br />
+                Maybe have a look elsewhere?
+              </p>
+              <p class="msg-prompt-prompt">
+                我的博客和 GitHub 主页：<br />
+                My blog and GitHub profile page:
+              </p>
+              <div class="msg-btn-container">
+                <a href="https://blog.lsy223622.com">
+                  <button type="button" class="msg-btn-main">Blog</button>
+                </a>
+                <a href="https://github.com/lsy223622">
+                  <button type="button" class="msg-btn-secondary">GitHub</button>
+                </a>
               </div>
             </div>
           </div>
-          <div class="col-md-6 align-self-center">
-            <h1>404</h1>
-            <h2>
-              页面不见咯~<br />
-              The page is missing~
-            </h2>
-            <div class="content">
-              <p>
-                很奇怪吗？我也觉得。<br />
-                但你是怎么找到这个页面的呢？<br />
-                Feeling strange? Me too. <br />
-                But how do you find this page?
-              </p>
-            </div>
-            <a href="https://lsy223622.com">
-              <button class="btn blue">HOME</button>
+          <div class="btn-container">
+            <a class="btn-content" href="https://lsy223622.com">
+              <span class="btn-title">HOME</span>
+              <span class="icon-arrow">
+                <svg width="66" height="43">
+                  <g id="arrow" fill="#FFF" fill-rule="evenodd" stroke="none" stroke-width="1">
+                    <path id="arrow-icon-one" d="M40 4l4-4h1l21 21a1 1 0 010 1L45 43h-1l-4-4a1 1 0 010-1l17-16v-1L40 5V4z" />
+                    <path id="arrow-icon-two" d="M20 4l4-4h1l21 21a1 1 0 010 1L25 43h-1l-4-4a1 1 0 010-1l17-16v-1L20 5V4z" />
+                    <path id="arrow-icon-three" d="M0 4l4-4h1l21 21a1 1 0 010 1L5 43H4l-4-4v-1l17-16v-1L0 5a1 1 0 010-1z" />
+                  </g>
+                </svg>
+              </span>
             </a>
           </div>
         </div>
