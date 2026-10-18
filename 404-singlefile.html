@@ -1,71 +1,389 @@
-<!DOCTYPE html>
-<html lang="zh-CN,en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>404 Not Found</title>
-    <style type="text/css">
-      @import url("https://fonts.loli.net/css?family=Nunito+Sans");:root{--blue:#396aa9;--msg-yellow:#facc15;--msg-bg:#f0fdf4;--msg-title:#166534;--msg-text:#15803d;--msg-svg:#4ade80;--msg-btn-hover:#d1fae5;--btn-background:#15803d;--btn-outline:#15803d80;}html,body{height:100%;width:100%;padding:0;display:flex;align-items:center;justify-content:center;}main{width:100%;}.flex-container{display:flex;align-items:center;justify-content:center;justify-self:center;align-items:center;align-self:center;}.hh-container{position:relative;width:20rem;margin:0;}h1{font-size:8rem;margin:0 0 1rem 0;font-weight:bold;}h2{margin:1rem 0;font-weight:bold;}.content{margin:1rem 0;}.link-container{width:20rem;margin:1rem 0 0 0;}.msg-container{position:relative;margin:0 0 5rem 0;padding:0.5rem 0rem 0.5rem 1rem;width:100%;display:flex;flex-direction:column;gap:1rem;border-radius:0.5rem;background-color:var(--msg-bg);border-left:0.625rem solid var(--msg-title);}.msg-svg{color:var(--msg-svg);width:2rem;height:2rem;margin:0.5rem 0 0.25rem -0.375rem;flex-shrink:0;}.msg-prompt-wrap{margin:-4rem 0 0 2rem;}.msg-prompt-heading{font-weight:bold;color:var(--msg-text);}.msg-prompt-prompt{margin:0.5rem 0 0 0;color:var(--msg-text);}.msg-btn-container{display:flex;margin:0.5rem 0 0 -0.5rem;}.msg-btn-main,.msg-btn-secondary{padding:0.375rem 0.5rem;background-color:var(--msg-bg);color:var(--msg-text);font-size:1rem;font-weight:bold;border-radius:0.5rem;border:none;margin-right:0.5rem;cursor:pointer;}.msg-btn-main:hover,.msg-btn-secondary:hover{background-color:var(--msg-btn-hover);}.btn-container{display:flex;margin:2rem 0 0 0;}.btn-content{display:flex;align-items:center;padding:5px 30px;text-decoration:none;font-weight:600;font-size:30px;color:white;background:var(--btn-background);transition:1s;border-radius:100px;box-shadow:0 0 0.2em 0 var(--btn-background);}.btn-content:hover,.btn-content:focus{transition:0.5s;animation:btn-content 1s;outline:0.1em solid transparent;outline-offset:0.2em;box-shadow:0 0 0.4em 0 var(--btn-background);}.btn-content .icon-arrow{transition:0.5s;margin-right:0;transform:scale(0.6);}.btn-content:hover .icon-arrow{transition:0.5s;margin-right:25px;}.icon-arrow{width:20px;margin-left:15px;position:relative;top:6%;}#arrow-icon-one{transition:0.4s;transform:translateX(-60%);}#arrow-icon-two{transition:0.5s;transform:translateX(-30%);}.btn-content:hover #arrow-icon-three{animation:color_anim 1s infinite 0.2s;}.btn-content:hover #arrow-icon-one{transform:translateX(0%);animation:color_anim 1s infinite 0.6s;}.btn-content:hover #arrow-icon-two{transform:translateX(0%);animation:color_anim 1s infinite 0.4s;}@keyframes color_anim{0%{fill:white;}50%{fill:var(--btn-background);}100%{fill:white;}}@-webkit-keyframes btn-content{0%{outline:0.2em solid var(--color-background);outline-offset:0;}}@keyframes btn-content{0%{outline:0.2em solid var(--btn-background);outline-offset:0;}}@media screen and (max-width:768px){.flex-container{flex-direction:column;width:100%;}.hh-container{width:80%;}h1{text-align:center;}h2{text-align:center;}.content{text-align:center;}.btn-container{margin:2rem 0;}.link-container{width:80%;justify-content:center;}.msg-container{width:94%;margin:0 0 2rem 0;}.btn-container{justify-content:center;}}
-    </style>
-  </head>
-  <body>
-    <main>
-      <div class="flex-container">
-        <div class="hh-container">
-          <h1>404</h1>
-          <h2>
-            页面不见了。<br />
-            The page is missing.
-          </h2>
-          <div class="content">
-            <p>
-              很奇怪吗？我也觉得。<br />
-              但你是怎么找到这个页面的呢？<br />
-              Feeling strange? Me too. <br />
-              But how did you end up on this page?
-            </p>
-          </div>
-        </div>
-        <div class="link-container">
-          <div class="msg-container">
-            <svg fill="currentColor" class="msg-svg" viewBox="0 0 24 24">
-              <path fill-rule="evenodd" d="M12 16l4-4-4-4-1 1 1 2H8v2h4l-1 2zm0 6l-4-1-3-2-2-3-1-4 1-4 2-3 3-2 4-1 4 1 3 2 2 3 1 4-1 4-2 3-3 2-4 1" clip-rule="evenodd" />
-            </svg>
-            <div class="msg-prompt-wrap">
-              <p class="msg-prompt-heading">
-                要不看看别的？<br />
-                Maybe have a look elsewhere?
-              </p>
-              <p class="msg-prompt-prompt">
-                我的博客和 GitHub 主页：<br />
-                My blog and GitHub profile page:
-              </p>
-              <div class="msg-btn-container">
-                <a href="https://blog.lsy223622.com">
-                  <button type="button" class="msg-btn-main">Blog</button>
-                </a>
-                <a href="https://github.com/lsy223622">
-                  <button type="button" class="msg-btn-secondary">GitHub</button>
-                </a>
-              </div>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c1016" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f3f6fb" media="(prefers-color-scheme: light)">
+  <meta name="robots" content="noindex">
+  <title>404 · 页面不见了</title>
+  <style>
+    :root {
+      color-scheme: dark light;
+      --background: #0c1016;
+      --background-secondary: #111723;
+      --foreground: #f5f7fb;
+      --muted: #9fa8b9;
+      --muted-2: #778194;
+      --accent: #c8d6f4;
+      --accent-strong: #d9e4ff;
+      --grid: rgba(255,255,255,.05);
+      --grid-mask: linear-gradient(115deg, rgba(0,0,0,.62), rgba(0,0,0,.32) 48%, transparent 92%);
+      --primary-bg: #ebeff7;
+      --primary-fg: #171b24;
+      --primary-glow: rgba(201, 215, 247, .18);
+      --sub-link: #adb6c7;
+      --sub-link-hover: #ffffff;
+      --panel-glow-1: rgba(145, 176, 255, .13);
+      --panel-glow-2: rgba(101, 126, 196, .08);
+      --tile-fill-a: rgba(73, 82, 104, .34);
+      --tile-fill-b: rgba(42, 48, 63, .26);
+      --tile-border: rgba(255,255,255,.12);
+      --tile-shadow: inset 0 1px 1px rgba(255,255,255,.08), 0 8px 18px rgba(0,0,0,.16);
+      --missing-border: rgba(149, 163, 196, .55);
+      --loose-fill-a: rgba(208, 221, 255, .78);
+      --loose-fill-b: rgba(150, 171, 214, .62);
+      --loose-border: rgba(244, 248, 255, .55);
+      --loose-shadow-static: 0 18px 28px rgba(0,0,0,.22), inset 0 1px 1px rgba(255,255,255,.36), 0 0 28px rgba(161, 188, 255, .14);
+      --tile-radius: 33%;
+      --button-radius: 17px;
+      --squircle-shape: superellipse(1.4);
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --background: #f3f6fb;
+        --background-secondary: #ebeff6;
+        --foreground: #131823;
+        --muted: #566074;
+        --muted-2: #788298;
+        --accent: #5e79b7;
+        --accent-strong: #718ac2;
+        --grid: rgba(21,30,48,.055);
+        --grid-mask: linear-gradient(115deg, rgba(0,0,0,.9), rgba(0,0,0,.62) 48%, transparent 92%);
+        --primary-bg: #171c25;
+        --primary-fg: #f5f7fb;
+        --primary-glow: rgba(110, 138, 204, .15);
+        --sub-link: #4f5b72;
+        --sub-link-hover: #121722;
+        --panel-glow-1: rgba(129,161,236,.12);
+        --panel-glow-2: rgba(154,173,214,.12);
+        --tile-fill-a: rgba(255,255,255,.34);
+        --tile-fill-b: rgba(233,238,247,.28);
+        --tile-border: rgba(83,95,124,.12);
+        --tile-shadow: inset 0 1px 1px rgba(255,255,255,.52), 0 8px 18px rgba(93,108,137,.08);
+        --missing-border: rgba(109, 127, 169, .54);
+        --loose-fill-a: rgba(204, 220, 255, .82);
+        --loose-fill-b: rgba(145, 168, 214, .66);
+        --loose-border: rgba(255,255,255,.62);
+        --loose-shadow-static: 0 16px 24px rgba(93,108,137,.14), inset 0 1px 1px rgba(255,255,255,.66), 0 0 34px rgba(123, 156, 235, .12);
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      background:
+        radial-gradient(circle at top, rgba(255,255,255,.03), transparent 32%),
+        linear-gradient(180deg, var(--background-secondary), var(--background));
+      color: var(--foreground);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; text-decoration: none; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+
+    .shell {
+      min-height: 100vh;
+      min-height: 100svh;
+      padding: clamp(22px, 3.5vw, 48px) clamp(20px, 4.8vw, 72px);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      isolation: isolate;
+      overflow: clip;
+    }
+    .shell::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      pointer-events: none;
+      background-image:
+        linear-gradient(var(--grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+      background-size: 62px 62px;
+      -webkit-mask-image: var(--grid-mask);
+      mask-image: var(--grid-mask);
+    }
+    .shell::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -3;
+      pointer-events: none;
+      background:
+        radial-gradient(circle at 18% 16%, rgba(143,172,237,.07), transparent 20%),
+        radial-gradient(circle at 82% 18%, rgba(143,172,237,.05), transparent 24%),
+        radial-gradient(circle at 62% 72%, rgba(127,150,205,.05), transparent 26%);
+      opacity: .9;
+    }
+    .stage { flex: 1; display: grid; place-items: center; padding: 55px 0; }
+    .content {
+      width: min(1120px, 100%);
+      display: grid;
+      grid-template-columns: minmax(0, .98fr) minmax(0, .92fr);
+      align-items: center;
+      column-gap: clamp(46px, 6.4vw, 110px);
+    }
+    .text-side {
+      min-width: 0;
+      padding-left: clamp(18px, 3vw, 44px);
+    }
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--accent);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .18em;
+    }
+    .kicker::before { content: ""; width: 17px; height: 1px; background: currentColor; }
+    h1 {
+      margin: 25px 0 12px;
+      font-size: clamp(118px, 13.2vw, 185px);
+      line-height: .91;
+      letter-spacing: -.105em;
+      font-weight: 680;
+      font-variant-numeric: tabular-nums;
+    }
+    h2 {
+      margin: 23px 0 13px;
+      font-size: clamp(23px, 2.35vw, 30px);
+      font-weight: 570;
+      letter-spacing: -.055em;
+      line-height: 1.35;
+    }
+    .description { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.95; }
+    .english { margin: 6px 0 0; color: var(--muted-2); font-size: 12px; line-height: 1.75; }
+    .actions {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 36px;
+    }
+    .primary {
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 31px;
+      min-height: 48px;
+      padding: 13px 17px;
+      border-radius: var(--button-radius);
+      corner-shape: var(--squircle-shape);
+      background: var(--primary-bg);
+      color: var(--primary-fg);
+      font-weight: 670;
+      font-size: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,.06), 0 0 0 1px rgba(255,255,255,.03) inset, 0 0 22px var(--primary-glow);
+      transition: transform .2s ease, filter .2s ease, box-shadow .2s ease;
+    }
+    .primary span { font-size: 18px; line-height: 1; }
+    .primary:hover { transform: translateY(-2px); filter: brightness(1.02); box-shadow: 0 10px 24px rgba(0,0,0,.12), 0 0 30px var(--primary-glow); }
+    .sub-links {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      flex-wrap: wrap;
+    }
+    /* Invisible, full-height targets on both desktop and mobile. */
+    .sub {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      min-width: 76px;
+      padding: 0 12px;
+      font-size: 14px;
+      color: var(--sub-link);
+      font-weight: 550;
+      transition: color .2s ease;
+    }
+    .sub:hover { color: var(--sub-link-hover); }
+
+    .visual {
+      display: grid;
+      place-items: center;
+      min-width: 0;
+      position: relative;
+      min-height: 420px;
+    }
+    .visual::before {
+      content: "";
+      position: absolute;
+      width: min(100%, 440px);
+      aspect-ratio: 1;
+      border-radius: 28%;
+      background:
+        radial-gradient(circle at 70% 28%, var(--panel-glow-1), transparent 18%),
+        radial-gradient(circle at 48% 58%, var(--panel-glow-2), transparent 32%);
+      filter: blur(18px);
+      opacity: .95;
+      pointer-events: none;
+    }
+    .matrix {
+      position: relative;
+      width: min(62%, 280px);
+      aspect-ratio: 1;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-rows: repeat(3, minmax(0, 1fr));
+      gap: 5%;
+      transform: rotate(-7deg);
+      animation: sway 22s 1.4s ease-in-out infinite;
+      z-index: 1;
+    }
+    .tile {
+      min-width: 0;
+      min-height: 0;
+      border: 1px solid var(--tile-border);
+      border-radius: var(--tile-radius);
+      corner-shape: var(--squircle-shape);
+      background: linear-gradient(145deg, var(--tile-fill-a), var(--tile-fill-b));
+      backdrop-filter: blur(12px) saturate(1.03);
+      -webkit-backdrop-filter: blur(12px) saturate(1.03);
+      box-shadow: var(--tile-shadow);
+    }
+    .missing {
+      position: relative;
+      background: transparent;
+      border: 1px dashed var(--missing-border);
+      box-shadow: none;
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+    }
+    .missing::before, .missing::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 23%;
+      height: 1px;
+      background: var(--accent-strong);
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    .missing::after { transform: translate(-50%, -50%) rotate(-45deg); }
+    .loose {
+      z-index: 1;
+      position: relative;
+      border-color: var(--loose-border);
+      background: linear-gradient(135deg, var(--loose-fill-a), var(--loose-fill-b));
+      box-shadow: var(--loose-shadow-static);
+      transform: translate(4%, -26%) rotate(10deg);
+      will-change: transform;
+    }
+
+    .text-side > *, .visual {
+      animation: reveal .75s cubic-bezier(.16,1,.3,1) both;
+    }
+    .kicker { animation-delay: .16s; }
+    h1 { animation-delay: .23s; }
+    h2 { animation-delay: .31s; }
+    .description { animation-delay: .38s; }
+    .english { animation-delay: .45s; }
+    .actions { animation-delay: .52s; }
+    .visual { animation-delay: .17s; }
+    .matrix .tile { animation: tile-enter .65s cubic-bezier(.16,1,.3,1) both; }
+    .matrix .tile:nth-child(3n + 1) { animation-delay: .36s; }
+    .matrix .tile:nth-child(3n + 2) { animation-delay: .46s; }
+    .matrix .tile:nth-child(3n) { animation-delay: .56s; }
+    .matrix .loose {
+      animation: tile-enter .65s .76s cubic-bezier(.16,1,.3,1) both,
+                 float-tile 6.5s 1.5s ease-in-out infinite;
+    }
+    @keyframes reveal {
+      from { opacity: 0; transform: translateY(13px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes tile-enter {
+      from { opacity: 0; scale: .92; }
+      to { opacity: 1; scale: 1; }
+    }
+    @keyframes float-tile {
+      0%, 100% { transform: translate(4%, -26%) rotate(10deg); }
+      50% { transform: translate(0, -44%) rotate(16deg); }
+    }
+    @keyframes sway {
+      0%, 100% { transform: rotate(-7deg); }
+      50% { transform: rotate(-5.5deg); }
+    }
+
+    @media (max-width: 800px) {
+      .stage { padding: 31px 0 35px; }
+      .content { max-width: 520px; grid-template-columns: 1fr; gap: 26px; }
+      .visual { order: -1; min-height: 300px; }
+      .visual::before { width: min(100%, 320px); }
+      .matrix { width: min(72%, 238px); }
+      .text-side { text-align: center; display: flex; flex-direction: column; align-items: center; padding-left: 0; }
+      h1 { font-size: 124px; margin: 18px 0 0; }
+      h2 { margin: 13px 0 11px; font-size: 27px; }
+      .actions {
+        width: min(100%, 300px);
+        flex-direction: column;
+        justify-content: center;
+        gap: 7px;
+        margin-top: 29px;
+      }
+      .primary { width: min(100%, 236px); min-height: 48px; }
+      .sub-links { justify-content: center; }
+    }
+    @media (max-width: 440px) {
+      .shell { padding: 21px 18px 20px; }
+      .stage { padding: 23px 0 27px; }
+      .content { gap: 24px; }
+      .visual { min-height: 270px; }
+      .visual::before { width: min(100%, 292px); }
+      .matrix { width: min(74%, 220px); }
+      .kicker { font-size: 9px; }
+      h1 { font-size: clamp(96px, 30vw, 112px); margin-top: 17px; }
+      h2 { font-size: 24px; margin-top: 13px; }
+      .description { font-size: 13px; line-height: 1.85; }
+      .english { max-width: 295px; font-size: 11px; }
+      .actions { margin-top: 25px; }
+      .primary { padding: 12px 16px; gap: 20px; }
+    }
+    @media (max-width: 350px) {
+      .matrix { width: min(76%, 196px); }
+      h2 { font-size: 22px; }
+      .sub-links { gap: 2px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+      .loose { transform: translate(4%, -26%) rotate(10deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <main class="stage">
+      <div class="content">
+        <section class="text-side" aria-labelledby="page-title">
+          <div class="kicker">LSY223622</div>
+          <h1 id="page-title">404</h1>
+          <h2>这里似乎什么都没有。</h2>
+          <p class="description">页面不见了，或许它从未存在过。<br>不过，你是怎么找到这里的？</p>
+          <p class="english">The page is missing. How did you end up here?</p>
+          <nav class="actions" aria-label="页面导航">
+            <a class="primary" href="https://lsy223622.com">返回首页 <span aria-hidden="true">↗</span></a>
+            <div class="sub-links">
+              <a class="sub" href="https://blog.lsy223622.com">Blog ↗</a>
+              <a class="sub" href="https://github.com/lsy223622">GitHub ↗</a>
             </div>
-          </div>
-          <div class="btn-container">
-            <a class="btn-content" href="https://lsy223622.com">
-              <span class="btn-title">HOME</span>
-              <span class="icon-arrow">
-                <svg width="66" height="43">
-                  <g id="arrow" fill="#FFF" fill-rule="evenodd" stroke="none" stroke-width="1">
-                    <path id="arrow-icon-one" d="M40 4l4-4h1l21 21a1 1 0 010 1L45 43h-1l-4-4a1 1 0 010-1l17-16v-1L40 5V4z" />
-                    <path id="arrow-icon-two" d="M20 4l4-4h1l21 21a1 1 0 010 1L25 43h-1l-4-4a1 1 0 010-1l17-16v-1L20 5V4z" />
-                    <path id="arrow-icon-three" d="M0 4l4-4h1l21 21a1 1 0 010 1L5 43H4l-4-4v-1l17-16v-1L0 5a1 1 0 010-1z" />
-                  </g>
-                </svg>
-              </span>
-            </a>
+          </nav>
+        </section>
+
+        <div class="visual" aria-hidden="true">
+          <div class="matrix">
+            <div class="tile"></div><div class="tile"></div><div class="tile loose"></div>
+            <div class="tile"></div><div class="tile missing"></div><div class="tile"></div>
+            <div class="tile"></div><div class="tile"></div><div class="tile"></div>
           </div>
         </div>
       </div>
     </main>
-  </body>
+  </div>
+</body>
 </html>
